@@ -1,0 +1,20 @@
+// !Colors
+$primary: #F23127;
+$primaryHover: darken($primary, 15%);
+$greyBg: #F5F5F5;
+$greyText: #5C5C5C;
+$blackText: #2C2C2C;
+$black: #000;
+$white: #fff;
+
+// ! Other
+$boxShadow: 1px 1px 10px $greyText;
+$overlay: rgba(0,0,0,0.5);
+$overlayHeavy: rgba(0,0,0,0.8);
+
+// ! spacer 
+$spacer: 1rem;
+$spacer0: $spacer * 0.5;
+$spacer2: $spacer * 1.5;
+$spacer3: $spacer * 2;
+$spacer4: $spacer * 2.5;

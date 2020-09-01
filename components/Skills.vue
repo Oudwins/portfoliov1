@@ -5,20 +5,20 @@
 </template>
 
 <script>
-import Skill from './minicomponents/Skill.vue'
+import Skill from "./minicomponents/Skill.vue";
 export default {
-  props: ['skills'],
+  props: ["skills"],
   components: {
     appSkill: Skill
   }
-}
+};
 </script>
 
-<style>
-.skills-box-items {
+<style lang="scss">
+.skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-top: 1rem;
+  margin: $spacer0 $spacer0;
 }
 </style>

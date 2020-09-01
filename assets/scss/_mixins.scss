@@ -1,0 +1,33 @@
+@mixin transition-basic {
+  transition: all 300ms ease-in-out;
+}
+
+@mixin container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin box_shadow {
+  box-shadow: 1px 1px 10px $greyText, 1px 1px 10px $greyText;
+}
+
+@mixin box_shadow_light {
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+@mixin box_shadow_light_focus {
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.15);
+}
+
+@mixin abs_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

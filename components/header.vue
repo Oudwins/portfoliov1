@@ -39,7 +39,6 @@ export default {
       this.scrollPosition = window.scrollY;
       console.log(this.scrollPosition);
     },
-    goTo() {},
   },
   mounted() {
     /* window.addEventListener("scroll", this.updateScroll); */

@@ -11,7 +11,7 @@
           @click.native="showModal(project)"
         ></app-project>
       </div>
-      <app-modal v-show="modal" :content="modalProject" @close-modal="modal = false"></app-modal>
+      <app-modal v-if="modal" :content="modalProject" @close-modal="modal = false"></app-modal>
     </div>
   </section>
   <!-- Project Item End -->

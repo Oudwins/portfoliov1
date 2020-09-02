@@ -34,7 +34,7 @@ export default {
       scrollPosition: null,
     };
   },
-  methods: {
+  /*   methods: {
     updateScroll() {
       this.scrollPosition = window.scrollY;
       console.log(this.scrollPosition);
@@ -47,7 +47,7 @@ export default {
   beforeDestroy() {
     window.removeEventListener("scroll", this.updateScroll);
     window.removeEventListener("touchmove", this.updateScroll);
-  },
+  }, */
 };
 </script>
 

@@ -64,11 +64,5 @@ export default {
   },
   styleResources: {
     scss: ['./assets/scss/_variables.scss', './assets/scss/_mixins.scss']
-  },
-  /* try fixing bug */
-  generate: {
-    minify: {
-      collapseWhitespace: false
-    }
   }
 }

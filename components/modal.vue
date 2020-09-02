@@ -127,7 +127,7 @@ export default {
   }
 }
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 1200px) {
   .modal__body {
     display: flex;
   }

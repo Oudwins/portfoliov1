@@ -2,10 +2,10 @@ import siteInfo from './assets/data/general';
 
 export default {
   /* Server to serve over wifi */
-  server: {
-    port: 8000, //default 3000
-    host: '0.0.0.0'
-  },
+  /*   server: {
+      port: 8000, //default 3000
+      host: '0.0.0.0'
+    }, */
   mode: 'universal',
   /*
    ** Headers of the page

@@ -43,9 +43,11 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.updateScroll);
+    window.addEventListener("touchmove", this.updateScroll);
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.updateScroll);
+    window.removeEventListener("touchmove", this.updateScroll);
   },
 };
 </script>

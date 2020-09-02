@@ -16,7 +16,7 @@
               v-for="link in navLinks"
               :key="link.name"
             >
-              <a :href="link.url" @click="navOpen = false" class="menu-link">{{ link.name }}</a>
+              <!--               <a :href="link.url" @click="navOpen = false" class="menu-link">{{ link.name }}</a> -->
             </li>
           </ul>
         </div>

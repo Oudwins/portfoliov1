@@ -1,5 +1,5 @@
 export const lang = {
- name: 'Lenguages',
+ name: 'Lenguajes',
  // TODO
  icon: '',
  skills: {
@@ -50,6 +50,10 @@ export const design = {
   git: {
    name: 'Git/VC',
    img: 'skills/git.svg'
+  },
+  wordpress: {
+   name: 'Wordpress',
+   img: 'skills/wordpress.svg'
   },
   phososhop: {
    name: 'Phososhop',

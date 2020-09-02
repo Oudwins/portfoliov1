@@ -1,15 +1,15 @@
 <template>
   <main>
     <!-- !Hero -->
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="inner">
         <h1>Tristan Mayo</h1>
-        <h4>Desarrollador Front-End</h4>
+        <h3>Desarrollador Front-End</h3>
         <app-socials class="social-links"></app-socials>
       </div>
     </section>
     <!-- Skills -->
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="inner">
         <h2>Skills</h2>
         <div class="skills-box-cont">
@@ -18,7 +18,7 @@
               <i class="fas fa-laptop-code"></i>
             </div>
             <div class="skills-box-content">
-              <h3>Lenguages</h3>
+              <h3>Lenguajes</h3>
               <app-skills :skills="skills.lang.skills"></app-skills>
             </div>
           </div>
@@ -43,9 +43,12 @@
         </div>
       </div>
     </section>
-    <app-projects :projects="projects"></app-projects>
-    <app-about></app-about>
-    <app-contact></app-contact>
+    <!-- Projects -->
+    <app-projects :projects="projects" id="projects"></app-projects>
+    <!-- About -->
+    <app-about id="about"></app-about>
+    <!-- Contact -->
+    <app-contact id="contact"></app-contact>
   </main>
 </template>
 

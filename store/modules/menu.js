@@ -1,22 +1,22 @@
 export default [
  {
   name: 'Home',
-  url: '#'
+  url: '#hero'
  },
  {
   name: 'Skills',
-  url: '#'
+  url: '#skills'
  },
  {
   name: 'Works',
-  url: '#'
+  url: '#projects'
  },
  {
   name: 'About',
-  url: '#'
+  url: '#about'
  },
  {
   name: 'Contact',
-  url: '#'
+  url: '#contact'
  },
 ]

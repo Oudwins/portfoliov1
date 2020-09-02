@@ -16,7 +16,7 @@
               v-for="link in navLinks"
               :key="link.name"
             >
-              <a :href="link.url" class="menu-link">{{ link.name }}</a>
+              <a :href="link.url" @click="navOpen = false" class="menu-link">{{ link.name }}</a>
             </li>
           </ul>
         </div>
@@ -38,6 +38,7 @@ export default {
     updateScroll() {
       this.scrollPosition = window.scrollY;
     },
+    goTo() {},
   },
   mounted() {
     window.addEventListener("scroll", this.updateScroll);
@@ -175,7 +176,7 @@ export default {
         }
       }
 
-      @for $i from 1 through 4 {
+      @for $i from 1 through 5 {
         .menu-list {
           .menu-item:nth-child(#{$i}) {
             transition-delay: ($i * 0.1s) + 0.15s;

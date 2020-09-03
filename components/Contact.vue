@@ -2,7 +2,45 @@
   <div class="contact">
     <div class="form">
       <h2>Contacto</h2>
-      <form name="portfolio-contact" method="POST" action="/">
+      <form name="contact-form" method="POST" action="https://formspree.io/xrgywnqe">
+        <!-- row 1 name + phone number 50% each -->
+        <div class="row">
+          <input type="text" name="name" id="name" placeholder="Nombre" />
+
+          <input type="text" name="phone" id="phone" placeholder="Teléfono" />
+        </div>
+        <!-- email -->
+
+        <input type="email" name="_replyto" id="email" placeholder="Email" />
+
+        <!-- Pagina Web -->
+        <input type="text" name="web" id="web" placeholder="Página Web" />
+
+        <!-- asunto + caja de texto -->
+
+        <input type="text" name="_subject" id="asunto" placeholder="Asunto" />
+
+        <textarea
+          name="message"
+          id="mensaje"
+          cols="30"
+          rows="10"
+          placeholder="¿Cómo te puedo ayudar?"
+        ></textarea>
+        <!-- redirect user -->
+        <input type="hidden" name="_next" value="www.tristanmayo.com/" />
+        <button class="btn btn-outline">Enviar</button>
+      </form>
+    </div>
+  </div>
+</template>
+<script>
+/*       <form
+        name="portfolio-contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
         <input type="hidden" name="form-name" value="portfolio-contact" />
         <!-- row 1 name + phone number 50% each -->
         <div class="row">
@@ -10,18 +48,15 @@
           <input type="text" name="phone" id="name" placeholder="Teléfono" />
         </div>
         <!-- email -->
-        <input type="email" name="email" id placeholder="Email" />
+        <input type="email" name="email" id="email" placeholder="Email" />
+
         <!-- Pagina Web -->
         <input type="text" name="web" id placeholder="Página Web" />
         <!-- asunto + caja de texto -->
         <input type="text" name="subject" id placeholder="Asunto" />
         <textarea name="message" id cols="30" rows="10" placeholder="¿Cómo te puedo ayudar?"></textarea>
         <button type="submit" class="btn btn-outline">Enviar</button>
-      </form>
-    </div>
-  </div>
-</template>
-<script>
+      </form> */
 export default {};
 </script>
 

@@ -2,7 +2,8 @@
   <div class="contact">
     <div class="form">
       <h2>Contacto</h2>
-      <form name="portfolio-contact" method="POST" data-netlify="true">
+      <form name="portfolio-contact" method="POST" action="/">
+        <input type="hidden" name="form-name" value="portfolio-contact" />
         <!-- row 1 name + phone number 50% each -->
         <div class="row">
           <input type="text" name="name" id="name" placeholder="Nombre" />

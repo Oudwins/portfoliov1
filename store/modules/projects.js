@@ -4,7 +4,7 @@ export default [
     name: "UCocktail",
     smDescription: "Descripcion corta",
     lgDescription: "descripcion larga",
-    skills: { html: lang.skills.html, css: lang.skills.css, bootstrap: frameworks.skills.bootstrap, js: lang.skills.js, vue: frameworks.skills.vue },
+    skills: { html: lang.skills.html, scss: lang.skills.sass, bootstrap: frameworks.skills.bootstrap, js: lang.skills.js, vue: frameworks.skills.vue },
     github: "https://github.com/Oudwins/UCocktail",
     demo: "www.cocktail.tristanmayo.com",
     imgCover: "projects/cocktail.jpg",

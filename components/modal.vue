@@ -14,13 +14,13 @@
         </div>
         <div class="modal__right">
           <div class="content-head">
-            <h5>PROJECT</h5>
+            <h5>PROYECTO</h5>
             <h3 class="name">{{ content.name}}</h3>
           </div>
           <app-skills :skills="content.skills"></app-skills>
           <div class="modal__inf">
             <h5>INFORMACIÓN</h5>
-            <p class="modal__description">{{content.lgDescription}}</p>
+            <p class="modal__description" v-html="content.lgDescription"></p>
           </div>
           <div class="modal__footer">
             <a

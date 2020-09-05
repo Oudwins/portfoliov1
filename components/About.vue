@@ -1,10 +1,10 @@
 <template>
   <!-- 2 col layout, with image on side  -->
   <div class="about">
-    <div class="left">
+    <div class="left vertical-align">
       <img src="~assets/img/about/image.jpeg" alt="Personal Photo" />
     </div>
-    <div class="right">
+    <div class="right vertical-align">
       <h2>Sobre Mí</h2>
       <p>Mi primer encuentro con el mundo del desarrollo web fue en primero de bachillerato. Tuve un profesor magnífico con quien aprendí las bases de HTML, CSS, Javascript y Visual Basic. Sin embargo, desgraciadamente, en segundo cambiamos de profesor y acabe no disfrutando las clases de TIC. Más tarde, comenzé mi carrera profesional estudiando LEINN (Grado en Liderazgo Emprendimiento e Innovación) por Mondragon Universitat en Madrid. Un grado similar a ADE pero con un enfoque más práctico. A lo largo del año que pase ahí comenzé a trabajar con Wordpress (sin saber nada de código) y trás un año decidí ponerlo en pausa. Pero las habilidades que había desarrollado trabajando con Wordpress me las llevé. A lo largo desde entonces pase un tiempo mejorando mis habilidades de Wordpress mientras buscaba nuevo rumbo.</p>
       <br />
@@ -46,7 +46,7 @@ export default {};
   padding: 0 $spacer3;
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 1200px) {
   .about {
     flex-direction: row;
     padding: 0;
@@ -56,6 +56,12 @@ export default {};
   .right {
     @include flex_center;
     flex-direction: column;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .about p {
+    font-size: 0.8rem;
   }
 }
 </style>

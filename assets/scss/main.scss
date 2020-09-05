@@ -123,3 +123,9 @@ textarea {
 section {
   padding: $spacer3 0;
 }
+
+.vertical-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

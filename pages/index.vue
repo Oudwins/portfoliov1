@@ -11,7 +11,7 @@
     <!-- Skills -->
     <section class="skills" id="skills">
       <div class="inner">
-        <h2>Skills</h2>
+        <h2>Competencias</h2>
         <div class="skills-box-cont">
           <div class="skills-box">
             <div class="skills-box-icon">

@@ -1,22 +1,22 @@
 export default [
  {
-  name: 'Home',
+  name: 'Inicio',
   url: '#hero'
  },
  {
-  name: 'Skills',
+  name: 'Competencias',
   url: '#skills'
  },
  {
-  name: 'Works',
+  name: 'Proyectos',
   url: '#projects'
  },
  {
-  name: 'About',
+  name: 'Sobre Mí',
   url: '#about'
  },
  {
-  name: 'Contact',
+  name: 'Contacto',
   url: '#contact'
  },
 ]

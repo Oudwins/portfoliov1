@@ -5,27 +5,27 @@
       <form name="contact-form" method="POST" action="https://formspree.io/xrgywnqe">
         <!-- row 1 name + phone number 50% each -->
         <div class="row">
-          <input type="text" name="name" id="name" placeholder="Nombre" />
+          <input type="text" name="name" id="name" placeholder="Nombre" requiered />
 
-          <input type="text" name="phone" id="phone" placeholder="Teléfono" />
+          <input type="text" name="phone" id="phone" placeholder="Teléfono" requiered />
         </div>
         <!-- email -->
 
-        <input type="email" name="_replyto" id="email" placeholder="Email" />
+        <input type="email" name="_replyto" id="email" placeholder="Email" requiered />
 
         <!-- Pagina Web -->
-        <input type="text" name="web" id="web" placeholder="Página Web" />
+        <input type="text" name="web" id="web" placeholder="Página Web" requiered />
 
         <!-- asunto + caja de texto -->
 
-        <input type="text" name="_subject" id="asunto" placeholder="Asunto" />
+        <input type="text" name="_subject" id="asunto" placeholder="Asunto" requiered />
 
         <textarea
           name="message"
           id="mensaje"
           cols="30"
           rows="10"
-          placeholder="¿Cómo te puedo ayudar?"
+          placeholder="¿Cómo te puedo ayudar?" requiered
         ></textarea>
         <!-- redirect user -->
         <input type="hidden" name="_next" value="www.tristanmayo.com/" />

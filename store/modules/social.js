@@ -2,7 +2,7 @@ export default [
  {
   id: 0,
   name: 'Linkedin',
-  url: 'https://www.linkedin.com/in/tristan-mayo-freire-466b3814b',
+  url: 'https://www.linkedin.com/in/tristan-mayo-466b3814b/',
   class: 'fab fa-linkedin'
  },
  {

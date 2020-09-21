@@ -2,7 +2,7 @@
   <!-- 2 col layout, with image on side  -->
   <div class="about">
     <div class="left vertical-align">
-      <img src="~assets/img/about/image.jpeg" alt="Personal Photo" />
+      <img src="~assets/img/about/image.jpg" alt="Personal Photo" />
     </div>
     <div class="right vertical-align">
       <h2>Sobre Mí</h2>

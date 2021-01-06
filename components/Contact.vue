@@ -5,14 +5,14 @@
       <form
         name="contact-form"
         method="POST"
-        data-netlify="true"
-        netlify-honeypot="miel"
+        netlify
+        netlify-honeypot="meil"
         data-netlify-recaptcha="true"
       >
-        <div style="display: none">
+        <!-- row 1 name + phone number 50% each -->
+        <div style="display:none;">
           <input type="text" name="miel" id="miel" />
         </div>
-        <!-- row 1 name + phone number 50% each -->
         <div class="row">
           <input
             type="text"
@@ -69,7 +69,6 @@
         ></textarea>
         <!-- redirect user -->
         <div data-netlify-recaptcha="true"></div>
-
         <button class="btn btn-outline" type="submit">Enviar</button>
       </form>
     </div>

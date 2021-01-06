@@ -2,34 +2,75 @@
   <div class="contact">
     <div class="form">
       <h2>Contacto</h2>
-      <form name="contact-form" method="POST" action="https://formspree.io/xrgywnqe">
+      <form
+        name="contact-form"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="miel"
+        data-netlify-recaptcha="true"
+      >
+        <div style="display: none">
+          <input type="text" name="miel" id="miel" />
+        </div>
         <!-- row 1 name + phone number 50% each -->
         <div class="row">
-          <input type="text" name="name" id="name" placeholder="Nombre" requiered />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nombre"
+            requiered
+          />
 
-          <input type="text" name="phone" id="phone" placeholder="Teléfono" requiered />
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Teléfono"
+            requiered
+          />
         </div>
         <!-- email -->
 
-        <input type="email" name="_replyto" id="email" placeholder="Email" requiered />
+        <input
+          type="email"
+          name="_replyto"
+          id="email"
+          placeholder="Email"
+          requiered
+        />
 
         <!-- Pagina Web -->
-        <input type="text" name="web" id="web" placeholder="Página Web" requiered />
+        <input
+          type="text"
+          name="web"
+          id="web"
+          placeholder="Página Web"
+          requiered
+        />
 
         <!-- asunto + caja de texto -->
 
-        <input type="text" name="_subject" id="asunto" placeholder="Asunto" requiered />
+        <input
+          type="text"
+          name="_subject"
+          id="asunto"
+          placeholder="Asunto"
+          requiered
+        />
 
         <textarea
           name="message"
           id="mensaje"
           cols="30"
           rows="10"
-          placeholder="¿Cómo te puedo ayudar?" requiered
+          placeholder="¿Cómo te puedo ayudar?"
+          requiered
         ></textarea>
         <!-- redirect user -->
-        <input type="hidden" name="_next" value="www.tristanmayo.com/" />
-        <button class="btn btn-outline">Enviar</button>
+        <div data-netlify-recaptcha="true"></div>
+
+        <button class="btn btn-outline" type="submit">Enviar</button>
       </form>
     </div>
   </div>

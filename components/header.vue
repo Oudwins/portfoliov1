@@ -1,22 +1,24 @@
 <template>
-  <header class="header" :class="{'nav-light': scrollPosition > 600}">
+  <header class="header" :class="{ 'nav-light': scrollPosition > 600 }">
     <nav class="navbar">
       <div class="container">
         <div class="brand">
           <img src="~assets/img/logo/logo-white.svg" alt="Logo de pagina" />
         </div>
         <div class="toggle" @click="navOpen = !navOpen">
-          <span class="toggle-btn" :class="{open: navOpen}"></span>
+          <span class="toggle-btn" :class="{ open: navOpen }"></span>
         </div>
-        <div class="menu" :class="{open: navOpen}">
-          <ul class="menu-list" :class="{open: navOpen}">
+        <div class="menu" :class="{ open: navOpen }">
+          <ul class="menu-list" :class="{ open: navOpen }">
             <li
               class="menu-item"
-              :class="{open: navOpen}"
+              :class="{ open: navOpen }"
               v-for="link in navLinks"
               :key="link.name"
             >
-              <a :href="link.url" @click="navOpen = false" class="menu-link">{{ link.name }}</a>
+              <a :href="link.url" @click="navOpen = false" class="menu-link">{{
+                link.name
+              }}</a>
             </li>
           </ul>
         </div>
@@ -31,22 +33,22 @@ export default {
     return {
       navOpen: false,
       navLinks: this.$store.state.menu,
-      scrollPosition: null,
+      scrollPosition: null
     };
   },
-    methods: {
+  methods: {
     updateScroll() {
       this.scrollPosition = window.scrollY;
-    },
+    }
   },
   mounted() {
-    window.addEventListener("scroll", this.updateScroll);
-    window.addEventListener("touchmove", this.updateScroll);
+    document.addEventListener("scroll", this.updateScroll);
+    document.addEventListener("touchmove", this.updateScroll);
   },
   beforeDestroy() {
-    window.removeEventListener("scroll", this.updateScroll);
-    window.removeEventListener("touchmove", this.updateScroll);
-  },
+    document.removeEventListener("scroll", this.updateScroll);
+    document.removeEventListener("touchmove", this.updateScroll);
+  }
 };
 </script>
 

@@ -1,17 +1,21 @@
-import { lang, frontEnd } from "./skills";
+import { lang, frontEnd, backEnd } from "./skills";
 export default [
-  /*   {
+  {
     name: "Natours Travel",
     smDescription: "Empresa de Viajes Organizados",
-    lgDescription: ` <p>UCocktail es un buscador de cockteleria 100% responsive, desarrollado y diseñado en su totalidad por mi. El buscador no usa ningún tipo de frontEnd sino que se nutre de CocktailDB, una api de recetas de bebidas. Además, se trata de una página de habla inglesa.</p><br/>
-  <p>Se trata de una SPA (Single Page Application) desarrollada con multiples tecnologías: el framework Vue para las funcionalidades de SPA y la reactividad de la página y Bootstrap para los estilos genéricos, SCSS para customizaciones en estos estilos.</p><br/>
-  <p>El buscador tiene diversas funcionalidades. Permite la busqueda por ingrediente o por nombre de bebida sin necesidad de cambiar ningún parámetro (puede probar a buscar "Lemon" y "Margarita"). En caso de obtener más de 8 resultados de la busqueda introducira paginación. Finalmente tiene un sistema de recomendaciones incorporado basado en los ingredientes de la bebida que se está visualizando.</p>`,
-    skills: {  js: lang.skills.js, },
+    lgDescription: ` <p>Natours es una página de venta de tours. De experiencias de todo tipo. He desarollado el backend usando el patron MVC. Usando json web tokens para autentificar a los usuarios.</p><br/>
+  <p>EL servidor, además de renderizar la web, también tiene una extensa API, que permite realizar todas las operaciones comunes de CRUD (Crear, leer, actualizar y borrar) con cado uno de los recursos. Cuenta con 4 recursos, los usuarios, para los cuales he implementado los procesos de creación de cuenta, inicio de sesión, recuperación de contraseña vía envio de código a su email... </p><br/>
+  <p>Luego está el recurso de Tours, para el que las operaciones de CRUD están limitadas según el rol del usuario. Por otro lado también he implementado la opción de dejar reviews  y reservar tours. La aplicación no está acabada, sobre todo el front end que es algo de lo que no me he hecho cargo.</p>`,
+    skills: {
+      node: backEnd.skills.nodejs,
+      mongo: backEnd.skills.mongo,
+      express: backEnd.skills.express
+    },
     github: "https://github.com/Oudwins/natours",
     demo: "https://natourtravel.herokuapp.com/",
-    imgCover: "projects/cocktail.jpg",
-    imgResponsive: "projects/cocktail_responsive.jpg"
-  }, */
+    imgCover: "projects/natours.jpg",
+    imgResponsive: "projects/natours.jpg"
+  },
   {
     name: "UCocktail",
     smDescription: "Buscador de cockteleria",

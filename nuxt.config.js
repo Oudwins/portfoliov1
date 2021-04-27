@@ -1,4 +1,4 @@
-import siteInfo from './assets/data/general';
+import siteInfo from "./assets/data/general";
 
 export default {
   /* Server to serve over wifi */
@@ -6,32 +6,35 @@ export default {
       port: 8000, //default 3000
       host: '0.0.0.0'
     }, */
-  mode: 'universal',
+  mode: "spa",
   /*
    ** Headers of the page
    */
   head: {
     title: siteInfo.title,
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        hid: 'description',
-        name: 'description',
-        // TODO 
-        content: 'Tristan Mayo es un programador front-end...'
+        hid: "description",
+        name: "description",
+        // TODO
+        content: "Tristan Mayo es un programador front-end..."
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: './logo-favicon.ico' }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "./logo-favicon.ico" }]
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: "#fff" },
   /*
    ** Global CSS
    */
-  css: ['assets/scss/main.scss', 'assets/fontawesome-free-5.12.0-web/css/all.min.css'],
+  css: [
+    "assets/scss/main.scss",
+    "assets/fontawesome-free-5.12.0-web/css/all.min.css"
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -41,15 +44,15 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    "@nuxtjs/eslint-module"
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    '@nuxtjs/style-resources'
+    "@nuxtjs/axios",
+    "@nuxtjs/style-resources"
   ],
   /*
    ** Build configuration
@@ -60,10 +63,10 @@ export default {
      */
     //!THIS IS WHERE I WANT TO ADD TRUE WHEN MORE PAGES
     extractCSS: false,
-    extend(config, ctx) { }
+    extend(config, ctx) {}
   },
   styleResources: {
-    scss: ['./assets/scss/_variables.scss', './assets/scss/_mixins.scss']
+    scss: ["./assets/scss/_variables.scss", "./assets/scss/_mixins.scss"]
   },
-  target: 'static'
-}
+  target: "static"
+};

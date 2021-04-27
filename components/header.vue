@@ -1,5 +1,5 @@
 <template>
-  <header class="header" :class="{ 'nav-light': scrollPosition > 600 }">
+  <header class="header" :class="{ 'nav-light': darkClass }">
     <nav class="navbar">
       <div class="container">
         <div class="brand">
@@ -43,8 +43,8 @@ export default {
     }
   },
   computed: {
-    tScrollPosition() {
-      return window.scrollY;
+    darkClass() {
+      return this.scrollPosition > 600;
     }
   },
   mounted() {

@@ -1,6 +1,6 @@
-# portfolio-v2
+# portfolio-v1
 
-> My personal developer portfolio v2
+> My personal developer portfolio v1
 
 ## Build Setup
 

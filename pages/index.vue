@@ -27,8 +27,17 @@
               <i class="fas fa-pencil-ruler"></i>
             </div>
             <div class="skills-box-content">
-              <h3>Frameworks</h3>
-              <app-skills :skills="skills.frameworks.skills"></app-skills>
+              <h3>Front End</h3>
+              <app-skills :skills="skills.frontEnd.skills"></app-skills>
+            </div>
+          </div>
+          <div class="skills-box">
+            <div class="skills-box-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <div class="skills-box-content">
+              <h3>Back End</h3>
+              <app-skills :skills="skills.backEnd.skills"></app-skills>
             </div>
           </div>
           <div class="skills-box">
@@ -65,22 +74,23 @@ export default {
     return {
       skills: {
         lang: this.$store.state.skills.lang,
-        frameworks: this.$store.state.skills.frameworks,
-        design: this.$store.state.skills.design,
+        frontEnd: this.$store.state.skills.frontEnd,
+        backEnd: this.$store.state.skills.backEnd,
+        design: this.$store.state.skills.design
       },
-      projects: this.$store.state.projects,
+      projects: this.$store.state.projects
     };
   },
   head: {
-    titleTemplate: "%s | Desarrollador Web | Front End",
+    titleTemplate: "%s | Desarrollador Web | Front End"
   },
   components: {
     appSkills: Skills,
     appProjects: Projects,
     appSocials: Socials,
     appAbout: About,
-    appContact: Contact,
-  },
+    appContact: Contact
+  }
 };
 </script>
 

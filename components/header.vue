@@ -39,15 +39,21 @@ export default {
   methods: {
     updateScroll() {
       this.scrollPosition = window.scrollY;
+      console.log(window.scrollY);
+    }
+  },
+  computed: {
+    tScrollPosition() {
+      return window.scrollY;
     }
   },
   mounted() {
-    Document.addEventListener("scroll", this.updateScroll);
-    Document.addEventListener("touchmove", this.updateScroll);
+    window.addEventListener("scroll", this.updateScroll);
+    window.addEventListener("touchmove", this.updateScroll);
   },
   beforeDestroy() {
-    Document.removeEventListener("scroll", this.updateScroll);
-    Document.removeEventListener("touchmove", this.updateScroll);
+    window.removeEventListener("scroll", this.updateScroll);
+    window.removeEventListener("touchmove", this.updateScroll);
   }
 };
 </script>

@@ -4,7 +4,7 @@
     <section class="hero" id="hero">
       <div class="inner">
         <h1>Tristan Mayo</h1>
-        <h3>Desarrollador Front-End</h3>
+        <h3>Desarrollador Web Full-Stack</h3>
         <app-socials class="social-links"></app-socials>
       </div>
     </section>

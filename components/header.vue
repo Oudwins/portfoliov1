@@ -42,12 +42,12 @@ export default {
     }
   },
   mounted() {
-    document.addEventListener("scroll", this.updateScroll);
-    document.addEventListener("touchmove", this.updateScroll);
+    Document.addEventListener("scroll", this.updateScroll);
+    Document.addEventListener("touchmove", this.updateScroll);
   },
   beforeDestroy() {
-    document.removeEventListener("scroll", this.updateScroll);
-    document.removeEventListener("touchmove", this.updateScroll);
+    Document.removeEventListener("scroll", this.updateScroll);
+    Document.removeEventListener("touchmove", this.updateScroll);
   }
 };
 </script>
